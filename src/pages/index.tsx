@@ -20,6 +20,7 @@ export default function Home() {
         title: "Bienvenido",
         html: "Ya podrás ingresar al sistema",
         timer: 2000,
+        icon: "success",
         timerProgressBar: true,
         didOpen: () => {
           Swal.showLoading();
@@ -32,6 +33,7 @@ export default function Home() {
         title: "Información",
         text: "La credenciales de acceso no son correctas",
         icon: "error",
+        confirmButtonColor: "#32BB2B",
       });
     }
   };
@@ -50,7 +52,7 @@ export default function Home() {
               <div className="flex  flex-col w-full items-center justify-center h-screen">
                 <div className="px-8 pt-6 pb-4 mb-4 flex flex-col sm:w-full text-center">
                   <h2 className="text-4xl font-extrabold text-principal-10">
-                    Welcome to fruits App!
+                    Welcome to the fruits market!
                   </h2>
                 </div>
                 <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col sm:w-full lg:w-1/6">
