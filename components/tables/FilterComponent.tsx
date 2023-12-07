@@ -7,20 +7,9 @@ const Input = styled.input.attrs((props) => ({
 }))`
   height: 32px;
   width: 200px;
-  border-radius: 3px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border: 1px solid #e5e5e5;
-  padding: 0 32px 0 16px;
 `;
 
 const ClearButton = styled.button`
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
   height: 34px;
   width: 32px;
   text-align: center;
@@ -36,8 +25,14 @@ const FilterComponent = ({ filterText, onFilter, onClear }) => (
       placeholder="Search fruits..."
       value={filterText}
       onChange={onFilter}
+      className="px-3.5 py-2 border border-[#bdbdbd] rounded focus:border-[#17C815] focus:outline-none focus:ring-1 focus:ring-[#17C815]"
     />
-    <ClearButton onClick={onClear}>X</ClearButton>
+    <ClearButton
+      onClick={onClear}
+      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded ml-1"
+    >
+      X
+    </ClearButton>
   </>
 );
 
