@@ -8,11 +8,11 @@ html {
   background-color: #d7d7d7;
 }
 
-.customOverlay {
+.OverlayModal {
   background: rgba(36, 123, 160, 0.7);
 }
-.customModal {
+.ModalStyle {
   background: #b2dbbf;
-  max-width: 500px;
-  width: 100%;
+  max-width: 80%;
+  width: 80%;
 }

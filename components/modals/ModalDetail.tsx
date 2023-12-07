@@ -38,9 +38,9 @@ const ModalDetail: React.FC<Props> = ({ open, clicked }) => {
     return (
       <>
         <h5 className="mb-2 text-2xl font-bold  text-principal-170 mb-10">
-          About {fruitSelectedInfo.name}
+          Information
         </h5>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center mt-10 mb-10">
           <div className="max-w-sm rounded overflow-hidden shadow-lg">
             <img
               className="w-full"
@@ -51,7 +51,7 @@ const ModalDetail: React.FC<Props> = ({ open, clicked }) => {
                 {fruitSelectedInfo.name}
               </div>
               <p className="text-gray-700 text-base">
-                Cost <b>{fruitSelectedInfo.price}</b>
+                Price <b>{fruitSelectedInfo.price}</b>
               </p>
             </div>
           </div>
@@ -93,8 +93,8 @@ const ModalDetail: React.FC<Props> = ({ open, clicked }) => {
           onClose={clicked}
           center
           classNames={{
-            overlay: "customOverlay",
-            modal: "customModal",
+            overlay: "OverlayModal",
+            modal: "ModalStyle",
           }}
         >
           {!loading ? <ListStates /> : <LoadingSpinner />}
